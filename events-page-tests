@@ -1,0 +1,9 @@
+Title — назва тесту
+
+Preconditions — передумови
+
+Test Steps, оформлені у вигляді таблиці:
+
+Step	Action	Data	Expected Result
+1	...	...	...
+2	...	...	...

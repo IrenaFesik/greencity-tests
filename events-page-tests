@@ -1,9 +1,40 @@
-Title — назва тесту
+Test Case ID 001
+Title - Реєстрація кабінету через форму Google
 
-Preconditions — передумови
+Preconditions — Завантажена сторінка https://www.greencity.cx.ua/#/greenCity/events
 
-Test Steps, оформлені у вигляді таблиці:
+Test Steps:
 
-Step	Action	Data	Expected Result
-1	...	...	...
-2	...	...	...
+Step  Action	                                            Data	              Expected Result
+1     Натиснути кпонку "Зареєструватися"                                      Завантажилось модальне вікно "Вітаємо!"
+2	    Натиснути кпонку "Зареєструватися через Google"                         Завантажилось модальне вікно "Вхід через аккаунт Google"
+3     Обрати e-mail для реєстрації                       e-mail для тесту     Завантажилось модальне вікно "Вхід у сервіс "greencity.cx.ua"
+4     Натиснути на кнопку "Продовжити"                                        Завантажилась сторінка аккаунту https://www.greencity.cx.ua/#/ubs
+
+
+Test Case ID 002
+Title — Пошук подій через форми пошуку
+
+Preconditions — Завантажена сторінка https://www.greencity.cx.ua/#/greenCity/events
+
+Test Steps:
+
+Step	Action	                                Data	       Expected Result
+1	    Натиснути на іконку "Пошук"                          Відкрилось поле для пошуку
+2	    Ввести у поле для пошуку назву події    API          Завантажилась сторінка з результатом пошуку "Знайдено 6 подій"
+
+
+
+Test Case ID 003
+Title — Приїднання до події
+
+Preconditions — Завантажена сторінка https://www.greencity.cx.ua/#/greenCity/events та зареєстровано аккаунт через форму Google на e-mail для тесту
+
+Test Steps:
+
+Step	Action	                                                     Data	              Expected Result
+1	    Обрати подію та натиснути на кнопку "Приєднатися до події"                      Завантажилось модальне вікно "З поверненням!"
+2	    Натиснути кпонку "Увійти через Google"                                          Завантажилось модальне вікно "Вхід через аккаунт Google"
+3     Обрати e-mail для входу через Google                         e-mail для тесту   Завантажилась сторінка аккаунту https://www.greencity.cx.ua/#/greenCity/profile/1873
+
+
